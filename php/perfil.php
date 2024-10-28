@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare and execute the SQL query
-    $sql = "UPDATE usuarios SET nome_user = ?, password_user = ?";
+    $sql = "UPDATE usuarios SET nome_user = ?, password_user = ? WHERE id = $idUsuario";
     $stmt = $conexao->prepare($sql);
     $stmt->bind_param("ss", $novoNome, $novaSenha); // Assuming you have a session variable for the user's ID
 
