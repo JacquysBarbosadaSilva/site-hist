@@ -6,7 +6,7 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = htmlspecialchars(trim($_POST['username']));
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $tipo = htmlspecialchars(trim($_POST['tipo']));
+        $tipo = 'Aluno';
     
         // Verifica se o usuário já existe
         $sql_check = "SELECT * FROM usuarios WHERE nome_user = ?";
@@ -27,13 +27,18 @@
             $stmt->bind_param("sss", $username, $password, $tipo);
 
             if ($stmt->execute()) {
-
+                echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+                echo "<script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        Swal.fire({
+                            title: 'Usuário cadastrado com sucesso!',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        });
+                    });
+                </script>";
 
                 header('Location: login.php');
-            } else {
-
-                
-                header('Location: homepage.php');
             }
         }
 
@@ -52,6 +57,8 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>Cadastro - Históra e Tradição</title>
     </head>
     <body class="body-cadastrar-login">
@@ -65,29 +72,22 @@
                 <h1 class="titulo-login">Cadastrar</h1>
 
                 <div class="campos-texto">
-                    <label class="identificador-campo"  for="username">Username:</label>
+                    <label class="identificador-campo"  for="username">Usuário:</label>
                     <input class="campos-info" type="text" id="username" name="username" required>
                 </div>
                 
                 <div class="campos-texto">
-                    <label class="identificador-campo" for="password">Password:</label>
+                    <label class="identificador-campo" for="password">Senha:</label>
                     <input class="campos-info" type="password" id="password" name="password" required>
-                </div>
-
-                <div class="campos-texto-1">
-                    <p class="identificador-campo">Tipo:</p>
-
-                    <select class="selecionar-tipo" name="tipo" id="tipo" required>
-                        <option value="Aluno">Aluno</option>
-                        <option value="Professor">Professor</option>
-                    </select>
                 </div>
                 
                 <div class="alinhamento-button">
-                    <button class="button-entrar" type="submit">Enviar</button>
+                    <button class="button-entrar" type="submit">Cadastrar</button>
                 </div>
             </form>
-            <a id="redirecionamento" href="login.php"><button class="button-login">Login</button></a>
+            <div id="div-redirecionamento">
+                <a id="redirecionamento" href="login.php">Já tem cadastro? Faça seu login</a>
+            </div>
         </div>
     </body>
 </html>

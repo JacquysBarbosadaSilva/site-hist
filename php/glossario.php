@@ -45,5 +45,32 @@
                 </div>
             </div>
         </nav>
+
+        <main>
+        <form action="processa_conceito.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="titulo" placeholder="Título do conceito" required>
+            <textarea name="descricao" placeholder="Descrição do conceito" required></textarea>
+            <input type="text" name="fonte" placeholder="Fonte de pesquisa" required>
+            <input type="file" name="imagem" required>
+            <button type="submit" name="acao" value="adicionar">Adicionar Conceito</button>
+        </form>
+        
+        <section id="lista-conceitos">
+            <?php
+            // Exibir conceitos existentes com opções de editar e excluir
+            $stmt = $conn->query("SELECT * FROM conceitos ORDER BY titulo ASC");
+            while ($row = $stmt->fetch()) {
+                echo "<div class='conceito-admin'>";
+                echo "<h2>{$row['titulo']}</h2>";
+                echo "<form action='processa_conceito.php' method='post'>";
+                echo "<input type='hidden' name='id' value='{$row['id']}'>";
+                echo "<button type='submit' name='acao' value='editar'>Editar</button>";
+                echo "<button type='submit' name='acao' value='excluir'>Excluir</button>";
+                echo "</form>";
+                echo "</div>";
+            }
+            ?>
+        </section>
+    </main>
     </body>
 </html>

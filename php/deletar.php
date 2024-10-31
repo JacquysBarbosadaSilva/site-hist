@@ -1,23 +1,24 @@
 <?php
     include 'conexao.php';
+    session_start();
 
-        // Conecta ao banco de dados
-        // ...
-    
-        // Recebe o ID do registro a ser deletado
-    
-        // Prepara a query SQL para deletar o registro
-    $sql = "DELETE FROM usuarios WHERE id";
-    
-        // Executa a query
-    if ($conexao->query($sql) === TRUE) {
-        echo "<script>alert('Usuario Deletado com sucesso')</script>";
-        header('Location: ../index.php');
+    $id_usuario = $_POST['id_usuario'] ?? null;
 
+    if ($id_usuario) {
+        // Verifica se o usuário existe antes de deletar
+        $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = ?");
+        $stmt->execute([$id_usuario]);
+        $usuario = $stmt->fetch();
+
+        if ($usuario) {
+            // Deleta o usuário
+            $stmt = $conn->prepare("DELETE FROM usuarios WHERE id = ?");
+            $stmt->execute([$id_usuario]);
+            echo "Usuário deletado com sucesso.";
+        } else {
+            echo "Usuário não encontrado.";
+        }
     } else {
-        echo json_encode(['erro' => 'Erro ao deletar registro']);
+        echo "ID de usuário inválido.";
     }
-    
-        // Fecha a conexão com o banco de dados
-    $conexao->close();
 ?>

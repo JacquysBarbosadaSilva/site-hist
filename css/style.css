@@ -310,8 +310,13 @@ h5{
 }
 
 #redirecionamento{
-    width: 40%;
-    text-decoration: none;
+    color: #1C826A;
+}
+
+#div-redirecionamento{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .button-login{
@@ -539,6 +544,11 @@ h5{
 .alinhamento-imagem-icone{
     display: flex;
     align-items: center;
+}
+
+.titulo-cards{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 /* Glossario */

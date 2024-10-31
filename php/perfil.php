@@ -1,32 +1,41 @@
 <?php
-session_start();
-include 'conexao.php';
+    session_start();
+    include 'conexao.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $novoNome = $_POST['username'];
-    $novaSenha = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $idUsuario = $_SESSION['id_usuario'];
 
-    // Validate input (add more checks as needed)
-    if (empty($novoNome) || empty($novaSenha)) {
-        echo "Por favor, preencha todos os campos.";
-        exit;
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $novoNome = $_POST['username'];
+        $novaSenha = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $_SESSION['usuario'] = $novoNome;
+
+        if (empty($novoNome) || empty($novaSenha)) {
+            echo "Por favor, preencha todos os campos.";
+        }
+
+        $sql = "UPDATE usuarios SET nome_user = ?, password_user = ? WHERE id = $idUsuario";
+        $stmt = $conexao->prepare($sql);
+        $stmt->bind_param("ss", $novoNome, $novaSenha);
+
+        if ($stmt->execute()) {
+            echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+            echo "<script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        Swal.fire({
+                            title: 'Usuário atualizado com sucesso!',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        });
+                    });
+                </script>";
+        } else {
+            echo "Erro ao alterar usuário: " . $stmt->error;
+        }
+
+        $stmt->close();
     }
 
-    // Prepare and execute the SQL query
-    $sql = "UPDATE usuarios SET nome_user = ?, password_user = ?";
-    $stmt = $conexao->prepare($sql);
-    $stmt->bind_param("ss", $novoNome, $novaSenha); // Assuming you have a session variable for the user's ID
-
-    if ($stmt->execute()) {
-        echo "<script>alert('Usuario atualizado com sucesso')</script>";
-    } else {
-        echo "Erro ao alterar usuário: " . $stmt->error;
-    }
-
-    $stmt->close();
-}
-
-$conexao->close();
+    $conexao->close();
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +45,8 @@ $conexao->close();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
         <title>Perfil - Históra e Tradição</title>
     </head>
     <body>
@@ -49,8 +60,8 @@ $conexao->close();
                         </a>
                     </div>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./php/login.php">Glossário</a></li>
+                        <li><a href="home_page_logado.php">Home</a></li>
+                        <li><a href="glossario.php">Glossário</a></li>
                     </ul> 
                 </div>
                 <div class="alinhamento-login-finalizado alinhamento-login-finalizado-glossario">
@@ -101,12 +112,12 @@ $conexao->close();
                 <div class="centralizacao-formulario">
                     <form class="tamanho-formulario" action="" method="post">
                         <div class="campos-texto">
-                            <label class="identificador-campo"  for="username">Username:</label>
+                            <label class="identificador-campo"  for="username">Usuário:</label>
                             <input class="campos-info" type="text" id="username" name="username" required>
                         </div>
                     
                         <div class="campos-texto">
-                            <label class="identificador-campo" for="password">Password:</label>
+                            <label class="identificador-campo" for="password">Senha:</label>
                             <input class="campos-info" type="password" id="password" name="password" required>
                         </div>
 
@@ -118,7 +129,7 @@ $conexao->close();
 
                 <div class="apenas-button">
                     <form class="tamanh-total" action="deletar.php" method="post">
-                        <button class="button-alterar tamanho" type="submit">Deletar</button>
+                        <button class="button-alterar tamanho" value="<?php echo $usuario['id']; ?>" type="submit">Deletar</button>
                     </form>
                     
                     <a class="button-logout" href="logout.php">Logout</a>

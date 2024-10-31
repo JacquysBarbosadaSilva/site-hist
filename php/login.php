@@ -20,6 +20,7 @@
 
             if (password_verify($password, $user['password_user'])) {
                 $_SESSION['usuario'] = $user['nome_user'];  
+                $_SESSION['id_usuario'] = $user['id'];  
                 $_SESSION['tipo'] = $user['type'];
 
                 if ($user['type'] == 'Professor') {
@@ -65,12 +66,12 @@
                 <h1 class="titulo-login">Login</h1>
 
                 <div class="campos-texto">
-                    <label class="identificador-campo"  for="username">Username:</label>
+                    <label class="identificador-campo"  for="username">Usuário:</label>
                     <input class="campos-info" type="text" id="username" name="username" required>
                 </div>
                 
                 <div class="campos-texto">
-                    <label class="identificador-campo" for="password">Password:</label>
+                    <label class="identificador-campo" for="password">Senha:</label>
                     <input class="campos-info" type="password" id="password" name="password" required>
                 </div>
                 
