@@ -36,6 +36,8 @@
     }
 
     $conexao->close();
+
+
 ?>
 
 <!DOCTYPE html>
