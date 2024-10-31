@@ -121,7 +121,7 @@ body {
 }
 
 .carousel {
-    margin-top: 15%;
+    margin-top: 11%;
     position: relative;
     justify-content: center;
     display: flex;
@@ -148,7 +148,7 @@ body {
 
 #tamanho_da_imagem{
     width: 100%;        /* Mantém a largura em 100% */
-    height: 35vh !important;       /* Define a altura para 30% da viewport height */
+    height: 70vh !important;       /* Define a altura para 30% da viewport height */
     object-fit: cover;
     z-index: 1;
 }
@@ -192,7 +192,7 @@ body {
 }
 
 .titulo-grid{
-    margin-top: 100px;
+    margin-top: 4%;
     padding: 20px;
 }
 
@@ -553,3 +553,149 @@ h5{
 
 /* Glossario */
 
+/* Responsividade para telas menores (tablets e dispositivos móveis) */
+/* Responsividade para telas menores (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+    /* Nav Bar */
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .navegacao-paginas {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #botoes-caddastrar-login {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navegacao-paginas ul li {
+        margin: 0 10px;
+    }
+
+    .navegacao-paginas ul li a {
+        font-size: 18px;
+    }
+
+    /* Carrossel */
+    .carousel {
+        margin-top: 20%;
+        width: 100%;
+    }
+
+    #tamanho_da_imagem {
+        height: 50vh !important;
+    }
+
+    /* Cards de história */
+    .container-80 {
+        width: 90%;
+    }
+
+    .cards-historia {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Formulários e Login */
+    .form-login {
+        width: 90%;
+    }
+
+    .button-entrar, .button-login, .button-sair, .button-voltar {
+        width: 80%;
+        font-size: medium;
+        padding: 8px;
+    }
+
+    /* Alinhamento e layout geral */
+    .campos-texto, .campos-texto-1 {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .titulo-login {
+        font-size: larger;
+    }
+
+    /* Perfil */
+    .fundo-form {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .button-alterar, .button-logout {
+        width: 80%;
+        padding: 8px;
+        font-size: medium;
+    }
+}
+
+/* Responsividade para telas muito pequenas (celulares em modo retrato) */
+@media (max-width: 480px) {
+    /* Nav Bar */
+    .nav-bar {
+        padding: 5px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .navegacao-paginas {
+        gap: 10px;
+    }
+
+    .navegacao-paginas ul li a {
+        font-size: 16px;
+    }
+
+    /* Carrossel */
+    .carousel {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    #tamanho_da_imagem {
+        height: 40vh !important;
+    }
+
+    /* Cards de história */
+    .cards-historia {
+        font-size: 12px;
+    }
+
+    /* Formulários e Login */
+    .form-login, .fundo-form {
+        width: 100%;
+    }
+
+    .campos-info {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Botões */
+    .button-entrar, .button-login, .button-sair, .button-voltar {
+        width: 100%;
+        padding: 8px;
+        font-size: small;
+    }
+
+    /* Layouts de texto e alinhamento */
+    .titulo-login, .titulo-cards, .titulo-grid {
+        font-size: 1.2em;
+    }
+}
