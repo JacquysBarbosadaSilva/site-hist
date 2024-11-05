@@ -2,23 +2,15 @@
     include 'conexao.php';
     session_start();
 
-    $id_usuario = $_POST['id_usuario'] ?? null;
+    $id_usuario = $_SESSION['id_usuario'];
 
-    if ($id_usuario) {
-        // Verifica se o usuário existe antes de deletar
-        $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = ?");
-        $stmt->execute([$id_usuario]);
-        $usuario = $stmt->fetch();
-
-        if ($usuario) {
+        if ($id_usuario != '') {
             // Deleta o usuário
-            $stmt = $conn->prepare("DELETE FROM usuarios WHERE id = ?");
-            $stmt->execute([$id_usuario]);
+            $stmt = $conexao->prepare("DELETE FROM usuarios WHERE id = $id_usuario");
+            $stmt->execute();
             echo "Usuário deletado com sucesso.";
+            header('Location: ../index.php');
         } else {
             echo "Usuário não encontrado.";
         }
-    } else {
-        echo "ID de usuário inválido.";
-    }
 ?>
