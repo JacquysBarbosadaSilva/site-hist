@@ -553,6 +553,113 @@ h5{
 
 /* Glossario */
 
+.body-glossario {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 120px;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo, .subtitulo {
+    color: #333;
+}
+
+h1.titulo{
+    margin-bottom: 30px;
+}
+
+.lista-conceitos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-conceito {
+    margin-bottom: 30px;
+    margin: 10px 0;
+}
+
+.link-conceito {
+    text-decoration: none;
+    color: #1C826A;
+}
+
+.link-conceito:hover {
+    text-decoration: underline;
+}
+
+.form-conceito {
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input, .textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.textarea {
+    height: 100px; /* Altura da textarea */
+}
+
+.botao {
+    padding: 10px 15px;
+    background-color: #1C826A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #1C826A;
+}
+
+.link-voltar {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1C826A;
+}
+
+.link-voltar:hover {
+    text-decoration: underline;
+}
+
+.definicao, .fonte {
+    margin-top: 10px;
+}
+
+.imagem-conceito {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.alinhamento-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
 @media (max-width: 768px) {
