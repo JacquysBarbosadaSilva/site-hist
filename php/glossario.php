@@ -66,7 +66,7 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href="home_page_logado.php">Home</a></li>
+                    <li><a href="home_page_logado.php">Página Inicial</a></li>
                     <li><a href="glossario.php">Glossário</a></li>
                 </ul> 
             </div>
@@ -122,7 +122,7 @@
                     <p>Aguarde o professor para adicionar novos conceitos!</p>
                 <?php endif; ?>
             <?php endif; ?>
-        </div>
+        </div>                                                                                                                                                                                                  
     </div>
     
 </body>

@@ -24,7 +24,7 @@
                 <h2 id="sidebar-conteudo">MENU</h2>
                 <div class="redirecionamento-sidebar">
                     <ul class="redirecionamento-pagina">
-                        <li><a href="home_page_logado.php">Home</a></li>
+                        <li><a href="home_page_logado.php">Página Inicial</a></li>
                         <li><a href="glossario.php">Glossário</a></li>
                     </ul>
                     <div class="linha-menu"></div>

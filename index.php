@@ -24,7 +24,7 @@
                         </a>
                     </div>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Página Inicial</a></li>
                         <li><a href="./php/login.php">Glossário</a></li>
                     </ul> 
                 </div>

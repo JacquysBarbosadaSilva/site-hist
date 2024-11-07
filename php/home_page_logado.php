@@ -31,7 +31,7 @@
                         </a>
                     </div>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Página Inicial</a></li>
                         <li><a href="glossario.php">Glossário</a></li>
                     </ul> 
                 </div>
