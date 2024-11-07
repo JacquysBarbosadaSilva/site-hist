@@ -76,7 +76,7 @@
                 </div>
                 
                 <div class="alinhamento-button">
-                    <button class="button-entrar" type="submit">Entrar</button>
+                    <button class="button-entrar" type="submit">Login</button>
                 </div>
                 
                 

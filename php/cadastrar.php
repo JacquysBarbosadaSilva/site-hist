@@ -86,7 +86,7 @@
                 </div>
             </form>
             <div id="div-redirecionamento">
-                <a id="redirecionamento" href="login.php">Já tem cadastro? Faça seu login</a>
+                <a id="redirecionamento" href="home_page_logado.php">Já tem cadastro? Faça seu login</a>
             </div>
         </div>
     </body>

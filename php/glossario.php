@@ -116,10 +116,6 @@
                             <label class="label" for="fonte">Fonte:</label>
                             <input class="input" type="text" id="fonte" name="fonte" required>
                         </div>
-                        <div class="campo">
-                            <label class="label" for="imagem">URL da Imagem:</label>
-                            <input class="input" type="text" id="imagem" name="imagem">
-                        </div>
                         <button class="botao" type="submit" name="adicionar">Adicionar Conceito</button>
                     </form>
                 <?php else: ?>
@@ -128,5 +124,6 @@
             <?php endif; ?>
         </div>
     </div>
+    
 </body>
 </html>

@@ -24,7 +24,7 @@
                         </a>
                     </div>
                     <ul>
-                        <li><a href="./php/login.php">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="./php/login.php">Glossário</a></li>
                     </ul> 
                 </div>
@@ -102,50 +102,48 @@
                 <a class="titulo-cards" href="php/cadastrar.php">
                     <div class="cards-historia">
                         <h5>História Primitiva</h5>
-                        <img class="imagens-dos-cards" src="./img/archaeological-cave-paintings.jpg" alt="">
+                        <img class="imagens-dos-cards" src="img/img-card-primitiva.jpg" alt="">
                     </div>
                 </a>
+                
             </div>
+
             <div class="col-md-3">
                 <a class="titulo-cards" href="php/cadastrar.php">
                     <div class="cards-historia">
                         <h5>História Antiga</h5>
-                        <img class="imagens-dos-cards" src="./img/historia_antiga.jpg" alt="">
+                        <img class="imagens-dos-cards" src="img/img-idade-antiga.jpg" alt="">
                     </div>
                 </a>
             </div>
+
             <div class="col-md-3">
                 <a class="titulo-cards" href="php/cadastrar.php">
                     <div class="cards-historia">
                         <h5>Idade Média</h5>
-                        <img class="imagens-dos-cards" src="./img/idade_media.jpg" alt="">
+                        <img class="imagens-dos-cards" src="img/idade-media.jpg" alt="">
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="container-80">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="titulo-cards" href="php/cadastrar.php">
-                                <div class="cards-historia">
-                                    <h5>Idade Moderna</h5>
-                                    <img class="imagens-dos-cards" src="./img/idade_moderna.jpg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="titulo-cards" href="php/cadastrar.php">
-                                <div class="cards-historia">
-                                    <h5>Idade Contemporanea</h5>
-                                    <img class="imagens-dos-cards" src="./img/idade_contemporanea.jpg" alt="">
-                                </div>
-                            </a>
-                        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <a class="titulo-cards" href="php/cadastrar.php">
+                    <div class="cards-historia">
+                        <h5>Idade Moderna</h5>
+                        <img class="imagens-dos-cards" src="img/chegada-europeus-me.jpg" alt="">
                     </div>
-                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="titulo-cards" href="php/cadastrar.php">
+                    <div class="cards-historia">
+                        <h5>Idade Contemporanea</h5>
+                        <img class="imagens-dos-cards" src="img/img-card-idade-media.jpg" alt="">
+                    </div>
+                </a>
             </div>
         </div>
     </div>
