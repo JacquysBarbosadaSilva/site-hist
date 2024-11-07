@@ -29,7 +29,7 @@
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
-                        <li><a href="#">Históra Primitiva</a></li>
+                        <li><a class="periodo-selecionado" href="#">Históra Primitiva</a></li>
                         <li><a href="historia_antiga.php">História Antiga</a></li>
                         <li><a href="idade_media.php">Idade Média</a></li>
                         <li><a href="idade_moderna.php">Idade Moderna</a></li>
@@ -42,14 +42,14 @@
 
             <main class="content">
                 <div class="titulo-historia-conteudo">
-                    <h1 id="h1-primitiva">História</h1>
+                    <h1 id="h1-historia">História</h1>
                     <img class="logo-img-conteudo" src="../img/img-logo.png" alt="">
                 </div>
                 
                 <div class="linha"></div>
 
                 <div class="inform-section">
-                    <div class="card-Historia-primitiva">
+                    <div class="card-Historia">
                         <h2>História primitiva</h2>
                         <p>A Pré-História é como conhecemos o período que acompanha a evolução humana a partir do momento que os hominídeos começaram a usar ferramentas de pedra. Encerrou-se com o surgimento da escrita, que aconteceu entre 3.500 a.C. e 3.000 a.C. </p>
                         <p>A Pré-História é dividida entre Paleolítico, Mesolítico (período intermediário) e Neolítico. Nesses períodos, á o desenvolvimento dos hominídeos com a elaboração de novas ferramentas, além do surgimento do homo sapiens sapiens, há cerca de 300 mil anos. </p>
@@ -62,7 +62,7 @@
 
                     </div>
 
-                    <div class="card-Historia-primitiva">
+                    <div class="card-Historia">
                         <p>Essas ferramentas foram obra do homo habilis e do homo erectus (o primeiro hominídeo a ficar numa posição totalmente ereta). Essa fase estendeu-se de 3 milhões de anos atrás a 250 mil anos atrás. </p>  
                         <img class="imagens-conteudo" src="../img/img-primitiva.jpg" alt="">
                         <h4>Paleolítico Médio: </h4>
@@ -75,9 +75,9 @@
 
                 <div class="linha-abaixo-conteudo"></div>
 
-                <h2 id="h2-primitiva">Vídeos</h1>
+                <h2 id="h2-video">Vídeos</h1>
 
-                <div class="div-video-primitiva">
+                <div class="div-video">
                     <iframe src="https://www.youtube.com/embed/jcb6VrYNxYc?si=5Alr65LMi-Eqgov9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/IAzZ9HXA2xw?si=FYHrfx-4pr1zS72_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/jcb6VrYNxYc?si=2Y9IRf5_xpXwWrgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -114,7 +114,7 @@
                 <a class="titulo-cards" href="historia_primitiva.php">
                     <div class="cards-historia">
                         <h5>História Primitiva</h5>
-                        <img class="imagens-dos-cards" src="../img/archaeological-cave-paintings.jpg" alt="">
+                        <img class="imagens-dos-cards" src="../img/img-card-primitiva.jpg" alt="">
                     </div>
                 </a>
                 
@@ -124,7 +124,7 @@
                 <a class="titulo-cards" href="historia_antiga.php">
                     <div class="cards-historia">
                         <h5>História Antiga</h5>
-                        <img class="imagens-dos-cards" src="../img/historia_antiga.jpg" alt="">
+                        <img class="imagens-dos-cards" src="../img/img-idade-antiga.jpg" alt="">
                     </div>
                 </a>
             </div>
@@ -133,7 +133,7 @@
                 <a class="titulo-cards" href="idade_media.php">
                     <div class="cards-historia">
                         <h5>Idade Média</h5>
-                        <img class="imagens-dos-cards" src="../img/idade_media.jpg" alt="">
+                        <img class="imagens-dos-cards" src="../img/idade-media.jpg" alt="">
                     </div>
                 </a>
             </div>
@@ -147,7 +147,7 @@
                             <a class="titulo-cards" href="idade_moderna.php">
                                 <div class="cards-historia">
                                     <h5>Idade Moderna</h5>
-                                    <img class="imagens-dos-cards" src="../img/idade_moderna.jpg" alt="">
+                                    <img class="imagens-dos-cards" src="../img/chegada-europeus-me.jpg" alt="">
                                 </div>
                             </a>
                         </div>
@@ -155,7 +155,7 @@
                             <a class="titulo-cards" href="idade_contemporanea.php">
                                 <div class="cards-historia">
                                     <h5>Idade Contemporanea</h5>
-                                    <img class="imagens-dos-cards" src="../img/idade_contemporanea.jpg" alt="">
+                                    <img class="imagens-dos-cards" src="../img/img-card-idade-media.jpg" alt="">
                                 </div>
                             </a>
 

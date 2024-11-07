@@ -29,11 +29,11 @@
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
-                        <li><a href="#">Históra Primitiva</a></li>
+                        <li><a href="historia_primitiva.php">Históra Primitiva</a></li>
                         <li><a href="historia_antiga.php">História Antiga</a></li>
                         <li><a href="idade_media.php">Idade Média</a></li>
                         <li><a href="idade_moderna.php">Idade Moderna</a></li>
-                        <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
+                        <li><a class="periodo-selecionado" href="#">Idade contemporânea</a></li>
                     </ul>
                 </div>
 
@@ -60,7 +60,7 @@
                         <p>Do ponto de vista político, a Idade Contemporânea foi o período em que as monarquias absolutistas enfraqueceram-se, sendo substituídas por monarquias constitucionais, forma de governo que possui mais dispositivos democráticos, e por repúblicas, algumas democráticas, mas outras autoritárias. </p>
                         <p>Ainda do ponto de vista político, mas também entrando em questões econômicas, a Idade Contemporânea presenciou o surgimento de uma ideologia que propunha uma alternativa para a exploração praticada contra os trabalhadores no capitalismo: o socialismo. Os ideais socialistas mobilizaram trabalhadores em todo o mundo, desejosos de um mundo sem exploração. </p>
                         <p>No século XX, os ideais socialistas avançaram, e o primeiro país socialista do mundo surgiu em 1917, quando os bolcheviques realizaram um golpe e tomaram o poder na Rússia. Os ideais socialistas expandiram-se para outros países e fizeram com que o mundo se polarizasse entre nações socialistas e nações capitalistas. </p>  
-                        <img class="imagens-conteudo" src="../img/img-paleolitico.jpg" alt="">
+                        <img class="imagens-conteudo" src="../img/Idade-Contemporânea.jpg" alt="">
                     </div>
 
                     <div class="card-Historia">
@@ -69,7 +69,7 @@
                         <h3>O Brasil durante a Idade Contemporânea</h3>
                         <p>Na Idade Contemporânea, o Brasil passou por inúmeras transformações. De colônia, o país passou a ser uma nação independente, primeiro como uma monarquia e depois como uma república. No início dessa idade, apesar de territorialmente existir uma nação chamada Brasil, o sentimento de identidade nacional não existia ainda.</p>
                         <p>Tanto que, no ano em que a Idade Contemporânea se iniciou, o Brasil presenciou a inconfidência mineira, movimento de caráter separatista e republicano. O separatismo desse movimento era limitado, e a noção de identidade era restrita a Minas Gerais. A identidade brasileira só se formou ao longo do século XIX, após a independência. </p>
-                        <img class="imagens-conteudo" src="../img/img-primitiva.jpg" alt="">
+                        <img class="imagens-conteudo" src="../img/idade-contemporanea-acontecimentos.jpg" alt="">
                         <p>A independência brasileira foi resultado da quebra de relações entre as elites de Portugal e do Brasil. D. Pedro, herdeiro do trono português, foi alçado à liderança desse movimento que resultou na transformação do Brasil em um país independente, mas baseado em um regime monárquico. </p>
                         <p>O Brasil estruturou-se enquanto nação de uma forma que atendesse aos interesses de uma elite, e isso fez dele uma nação elitista e desigual, com uma parcela de ricos que gozavam (e ainda gozam) de muitos privilégios. O maior sintoma disso foi a manutenção da escravidão até o ano de 1888, fazendo de nosso país o último no mundo a abolir a escravidão. </p>
                         <p>Outra característica marcante do Brasil foi o autoritarismo, presente em nosso país de variadas formas. A historiadora Lilia Schwarcz identificou que o autoritarismo esteve presente na história brasileira por meio de racismo, corrupção, patrimonialismo, mandonismo, desigualdade social, violência, e intolerância. </p>

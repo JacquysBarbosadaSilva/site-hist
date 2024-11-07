@@ -29,9 +29,9 @@
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
-                        <li><a href="#">Históra Primitiva</a></li>
+                        <li><a href="historia_primitiva.php">Históra Primitiva</a></li>
                         <li><a href="historia_antiga.php">História Antiga</a></li>
-                        <li><a href="idade_media.php">Idade Média</a></li>
+                        <li><a class="periodo-selecionado" href="#">Idade Média</a></li>
                         <li><a href="idade_moderna.php">Idade Moderna</a></li>
                         <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
                     </ul>
@@ -42,14 +42,14 @@
 
             <main class="content">
                 <div class="titulo-historia-conteudo">
-                    <h1 id="h1-primitiva">História</h1>
+                    <h1 id="h1-historia">História</h1>
                     <img class="logo-img-conteudo" src="../img/img-logo.png" alt="">
                 </div>
                 
                 <div class="linha"></div>
 
                 <div class="inform-section">
-                    <div class="card-Historia-primitiva">
+                    <div class="card-Historia">
                         <h2>Idade Média</h2>
                         <p>A Idade Média é um período de aproximadamente mil anos da história ocidental, que se inicia no século V, com a queda do Império Romano do Ocidente, em 476, e termina no século XV, com a tomada de Constantinopla pelo Império Otomano, em 1453.  </p>
                         <p> A Idade Média foi um período histórico marcado por uma organização social predominantemente feudal, onde o poder estava nas mãos de senhores feudais e da Igreja. A economia era baseada na agricultura, e a sociedade era dividida em estamentos.  </p>
@@ -74,7 +74,7 @@
 
                     </div>
 
-                    <div class="card-Historia-primitiva">
+                    <div class="card-Historia">
                         <img class="imagens-conteudo" src="../img/img-feudalismo-idM.jpg" alt="">
                         <p>A convivência entre bárbaros e romanos, contudo, também apresentou conflitos. Em algumas regiões, as tribos que se estabeleceram não eram aceitas por oficiais do Império. O avanço dos hunos, vindos da Ásia, sobre a Europa, ao mesmo tempo em que levou germânicos e romanos a lutarem juntos em certas oportunidades, também acirrou conflitos entre eles, e até internamente entre as tribos bárbaras. Gradualmente essas tribos se estabeleceram no território antes dominado pelo Império que, já em crise, não conseguiu reagir e manter sua unidade. </p>
                         <h4>Feudalismo</h4>
@@ -95,9 +95,9 @@
 
                 <div class="linha-abaixo-conteudo"></div>
 
-                <h2 id="h2-primitiva">Vídeos</h1>
+                <h2 id="h2-video">Vídeos</h1>
 
-                <div class="div-video-primitiva">
+                <div class="div-video">
                     <iframe src="https://www.youtube.com/embed/YbR1bxtGnMo?si=OT9KJIdKTZYGGgV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/N6YxYbdvkNg?si=OXY4pwxFkZbLukRq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/VrCuaxk6waI?si=sfeiGHj2bnm2Du_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

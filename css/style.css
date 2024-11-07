@@ -311,6 +311,15 @@ h5{
 
 #redirecionamento{
     color: #1C826A;
+    font-size: medium;
+}
+
+.periodo-selecionado{
+    font-weight: bolder !important;
+}
+
+#redirecionamento:hover{
+    font-size: medium;
 }
 
 #div-redirecionamento{
@@ -395,10 +404,12 @@ h5{
 }
 
 .button-login-logado{
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
     background-color: transparent;
     color: white;
+    width: 200px;
+    margin-right: 20px;
     border: none;
     text-align: center;
     font-size: 20px;
@@ -434,6 +445,7 @@ h5{
 
 .perfil-icone{
     height: 50px;
+    margin-right: 40px;
     background-color: white !important;
     border-radius: 50px;
     cursor: pointer;
@@ -447,7 +459,7 @@ h5{
 .alinhamento-login-finalizado{
     display: flex;
     justify-content: center;
-    align-items: center;
+
     width: 250px;
 }
 

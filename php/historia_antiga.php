@@ -29,8 +29,8 @@
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
-                        <li><a href="#">Históra Primitiva</a></li>
-                        <li><a href="hitoria_antiga.php">História Antiga</a></li>
+                        <li><a href="historia_primitiva.php">Históra Primitiva</a></li>
+                        <li><a class="periodo-selecionado" href="#">História Antiga</a></li>
                         <li><a href="idade_media.php">Idade Média</a></li>
                         <li><a href="idade_moderna.php">Idade Moderna</a></li>
                         <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
@@ -42,14 +42,14 @@
 
             <main class="content">
                 <div class="titulo-historia-conteudo">
-                    <h1 id="h1-primitiva">História</h1>
+                    <h1 id="h1-historia">História</h1>
                     <img class="logo-img-conteudo" src="../img/img-logo.png" alt="">
                 </div>
                 
                 <div class="linha"></div>
 
                 <div class="inform-section">
-                    <div class="card-Historia-primitiva">
+                    <div class="card-Historia">
                         <h2>História antiga</h2>
                         <img src="hist-primitiva.webp" alt="">
                         <p>A História Antiga é uma época histórica marcada pelo surgimento e desenvolvimento das primeiras civilizações (civilizações antigas). Esse período teve início há 4.000 a.C, com o surgimento da escrita (surgimento da escrita cuneiforme), e terminou em 476, com o declínio do Império Romano do Ocidente. </p>
@@ -84,7 +84,7 @@
                         <img class="imagens-conteudo" src="../img/img-antiga.jpg" alt="">
                     </div>
 
-                    <div class="card-Historia-primitiva">
+                    <div class="card-Historia">
                         <h3>Grécia: </h3>
                         <p>Os gregos foram um dos grandes povos da Antiguidade e deixaram grandes contribuições na política, filosofia, matemática, história e muitas outras áreas. Essa civilização começou a desenvolver-se por meio da migração de alguns povos para o sul da Península Balcânica, a partir de 2000 a.C. </p>
                         <p>Os gregos surgiram da fusão de povos, como: </p>
@@ -126,9 +126,9 @@
 
                 <div class="linha-abaixo-conteudo"></div>
 
-                <h2 id="h2-primitiva">Vídeos</h1>
+                <h2 id="h2-video">Vídeos</h1>
 
-                <div class="div-video-primitiva">
+                <div class="div-video">
                     <iframe src="https://www.youtube.com/embed/HU08s_nrOzw?si=djgDiYR4EMhKpOpr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/YRu9j0yIwxw?si=TxZgV4irZLEoZxem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/1Ai3HtVWiYM?si=szE-FCAWMj1OV31A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

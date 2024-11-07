@@ -23,10 +23,10 @@
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
-                        <li><a href="#">Históra Primitiva</a></li>
+                        <li><a href="historia_primitiva.php">Históra Primitiva</a></li>
                         <li><a href="historia_antiga.php">História Antiga</a></li>
                         <li><a href="idade_media.php">Idade Média</a></li>
-                        <li><a href="idade_moderna.php">Idade Moderna</a></li>
+                        <li><a class="periodo-selecionado" href="#">Idade Moderna</a></li>
                         <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                         <li>Renascimento comercial: o renascimento cultural foi acompanhado por um intenso renascimento comercial, possibilitado pela reconquista de antigas rotas comerciais com o Oriente e no Mar Mediterrâneo, o que possibilitou o surgimento da burguesia, classe social ligada à atividade comercial; </li>
                         <li>Centralização do poder político: com as revoltas camponesas e o renascimento comercial, o feudalismo, antigo modelo de organização social, entrou em crise. Os senhores feudais perderam gradualmente seu poder, que se concentrou na mão dos reis, o que culminou com a formação dos Estados Modernos; </li>
                     </ul>
-                    <img src="../img/img-idade-moderna.jpg" alt="">
+                    <img class="imagens-conteudo" src="../img/img-idade-moderna.jpg" alt="">
                 </div>
 
                 <div class="card-Historia">
