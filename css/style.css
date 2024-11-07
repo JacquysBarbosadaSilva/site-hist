@@ -660,6 +660,169 @@ h1.titulo{
 
 }
 
+.titulo-cards{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.lista-espaço{
+    line-height: 35px;
+}
+
+iframe{
+    box-shadow: 5px 5px 15px rgba(28, 130, 160, 0.5);
+    padding: 10px;
+    height: 250px;
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+
+.div-video{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Historia Primitiva */
+
+.content {
+    padding: 40px;
+    width: 80%;
+    margin-left: 280px;
+}
+
+.linha{
+    width: 100%;
+    border: 1px solid #1C826A;
+    margin-bottom: 30px;
+}
+
+.linha-abaixo-conteudo{
+    width: 100%;
+    border: 1px solid #1C826A;
+    margin-top: 30px;
+}
+
+.logo-img-conteudo{
+    width: 120px;
+}
+
+.titulo-historia-conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-conteudo{
+    display: flex;
+    background-color: white;
+}
+
+.redirecionamento-sidebar{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.titulo-redirecionamento{
+    font-size: 30px;
+}
+
+.redirecionamento-pagina, li{
+    list-style-type: none;
+}
+
+.redirecionamento-pagina, a{
+    text-decoration: none !important;
+    color: white;
+    font-family: 'Dongle';
+    font-size: 30px;
+    font-weight: normal !important;
+}
+
+.redirecionamento-pagina, a:hover{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder !important;
+}
+
+.imagens-conteudo{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.linha-menu{
+    width: 100%;
+    border: 1px solid white;
+}
+
+#sidebar-conteudo{
+    font-family: 'Jockey one';
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+.menu_conteudo {
+    background-color: #1C826A;
+    padding: 20px;
+    font-family: 'Jockey One';
+    color: #fff;
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+}
+
+.card-Historia{
+    width: 45%;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(28, 130, 160, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-Historia-primitiva  h2 {
+    margin-bottom: 15px;
+}
+
+#h2-video{
+    color: #1C826A;
+    font-size: 40px;
+    margin-top: 50px;
+    font-family: 'Fascinate Inline';
+}
+
+#h1-historia{
+    color: #1C826A;
+    font-size: 40px;
+    font-family: 'Fascinate Inline';
+}
+
+.card-Historia p{
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+.card-Historia h3{
+    margin-bottom: 15px;
+}
+
+
+
+/* Idade Média */
+
+.inform-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
 @media (max-width: 768px) {
