@@ -139,31 +139,27 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="container-80">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="titulo-cards" href="idade_moderna.php">
-                                <div class="cards-historia">
-                                    <h5>Idade Moderna</h5>
-                                    <img class="imagens-dos-cards" src="../img/chegada-europeus-me.jpg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="titulo-cards" href="idade_contemporanea.php">
-                                <div class="cards-historia">
-                                    <h5>Idade Contemporanea</h5>
-                                    <img class="imagens-dos-cards" src="../img/img-card-idade-media.jpg" alt="">
-                                </div>
-                            </a>
-
-                        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <a class="titulo-cards" href="historia_antiga.php">
+                    <div class="cards-historia">
+                        <h5>Idade Moderna</h5>
+                        <img class="imagens-dos-cards" src="../img/chegada-europeus-me.jpg" alt="">
                     </div>
-                </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="titulo-cards" href="idade_media.php">
+                    <div class="cards-historia">
+                        <h5>Idade Contemporanea</h5>
+                        <img class="imagens-dos-cards" src="../img/img-card-idade-media.jpg" alt="">
+                    </div>
+                </a>
             </div>
         </div>
+
+        
     </div>
 
         

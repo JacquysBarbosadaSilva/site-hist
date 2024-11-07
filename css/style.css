@@ -8,8 +8,8 @@ body {
 
     background-color: rgba(110, 110, 110, 0.4) !important;
     width: 100%;
-    overflow: auto; /* Permite a rolagem */
-    position: relative; /* Trocar de 'fixed' para 'relative' ou remover */
+    overflow: auto; 
+    position: relative; 
 }
 
 /* Nav Bar */
@@ -99,7 +99,7 @@ body {
 
 .button-cadastrar:hover {
     background-color: white;
-    color: #1C826A; /* Cor ao passar o mouse */
+    color: #1C826A;
 }
 
 .button-login {
@@ -125,8 +125,7 @@ body {
     position: relative;
     justify-content: center;
     display: flex;
-    /* align-items: center; */
-    /* height: 35%; */
+
     width: 90%;
 }
 
@@ -143,52 +142,52 @@ body {
 }
 
 .carousel-item {
-    position: relative; /* Garante que a legenda seja posicionada em relação ao item do carrossel */
+    position: relative; 
 }
 
 #tamanho_da_imagem{
-    width: 100%;        /* Mantém a largura em 100% */
-    height: 70vh !important;       /* Define a altura para 30% da viewport height */
+    width: 100%;        
+    height: 70vh !important;      
     object-fit: cover;
     z-index: 1;
 }
 
 .carousel-caption {
     position: absolute;
-    top: 0; /* Move o título para o topo da imagem */
+    top: 0; 
     left: 0 !important;
     right: 0 !important;
     padding: 10px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)); /* Degradê partindo do topo para o meio */
-    color: white; /* Cor do texto da legenda */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)); 
+    color: white;
     text-align: center;
-    z-index: 2; /* Garante que a legenda fique sobre a imagem */
+    z-index: 2; 
 }
 
 
 .container-grid {
-    margin: 20px; /* Adiciona uma margem ao container */
+    margin: 20px;
     background-color: white;
 }
 
 .container-80 {
-    width: 50%; /* Define a largura do contêiner como 80% */
-    margin: 0 auto; /* Centraliza o contêiner */
+    width: 50%; 
+    margin: 0 auto;
 }
 
 .cards-historia {
     cursor: pointer;
-    border: 1px solid #ccc; /* Borda ao redor do cartão */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    background-color: #f9f9f9; /* Cor de fundo do cartão */
-    text-align: center; /* Centraliza o texto */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
-    transition: transform 0.2s; /* Transição suave */
+    border: 1px solid #ccc;
+    padding: 20px; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
 }
 
 .cards-historia:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .titulo-grid{
@@ -207,7 +206,6 @@ h5{
 .col-md-3 a, .col-md-6 a {
     text-decoration: none
 }
-
 
 
 /* Cadastrar */
@@ -519,6 +517,7 @@ h5{
     display: flex;
     justify-content: center;
     width: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     background-color: red;
     border: none;
@@ -536,6 +535,7 @@ h5{
 .button-logout:hover{
     background-color: white;
     color: red;
+    font-size: large;
     border: 2px solid red;
 }
 
@@ -837,147 +837,131 @@ iframe{
 
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
+/* Estilos gerais para telas pequenas (celulares) */
+/* Estilos gerais para telas pequenas (celulares) */
 @media (max-width: 768px) {
     /* Nav Bar */
     .nav-bar {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+        padding: 20px;
+    }
+
+    .navegacao-paginas,
+    #botoes-caddastrar-login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao-paginas ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inform-section {
+        flex-direction: column;
+    }
+
+    .card-Historia {
+        width: 93%;
+    }
+
+    .div-video {
+        flex-direction: column;
     }
 
     .logo img {
         width: 80px;
     }
 
-    .navegacao-paginas {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    #botoes-caddastrar-login {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .navegacao-paginas ul li {
-        margin: 0 10px;
-    }
-
-    .navegacao-paginas ul li a {
-        font-size: 18px;
-    }
-
-    /* Carrossel */
-    .carousel {
-        margin-top: 20%;
-        width: 100%;
-    }
-
-    #tamanho_da_imagem {
-        height: 50vh !important;
-    }
-
-    /* Cards de história */
-    .container-80 {
+    /* Cards */
+    .container-grid {
         width: 90%;
+        margin: 10px auto;
     }
 
     .cards-historia {
-        padding: 10px;
-        font-size: 14px;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    /* Formulários e Login */
+    /* Formulário de Cadastro/Login */
     .form-login {
         width: 90%;
-    }
-
-    .button-entrar, .button-login, .button-sair, .button-voltar {
-        width: 80%;
-        font-size: medium;
-        padding: 8px;
-    }
-
-    /* Alinhamento e layout geral */
-    .campos-texto, .campos-texto-1 {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 10px;
-    }
-
-    .titulo-login {
-        font-size: larger;
-    }
-
-    /* Perfil */
-    .fundo-form {
-        width: 80%;
         padding: 15px;
     }
 
-    .button-alterar, .button-logout {
-        width: 80%;
-        padding: 8px;
-        font-size: medium;
-    }
-}
-
-/* Responsividade para telas muito pequenas (celulares em modo retrato) */
-@media (max-width: 480px) {
-    /* Nav Bar */
-    .nav-bar {
-        padding: 5px;
-    }
-
-    .logo img {
-        width: 60px;
-    }
-
-    .navegacao-paginas {
-        gap: 10px;
-    }
-
-    .navegacao-paginas ul li a {
-        font-size: 16px;
-    }
-
-    /* Carrossel */
-    .carousel {
-        width: 100%;
-        margin-top: 25%;
-    }
-
-    #tamanho_da_imagem {
-        height: 40vh !important;
-    }
-
-    /* Cards de história */
-    .cards-historia {
-        font-size: 12px;
-    }
-
-    /* Formulários e Login */
-    .form-login, .fundo-form {
-        width: 100%;
-    }
-
     .campos-info {
-        width: 100%;
-        padding: 8px;
+        width: 90%;
     }
 
-    /* Botões */
-    .button-entrar, .button-login, .button-sair, .button-voltar {
+    /* Conteúdo */
+    .content {
+        margin-left: 0;
         width: 100%;
-        padding: 8px;
-        font-size: small;
+        padding: 20px;
     }
 
-    /* Layouts de texto e alinhamento */
-    .titulo-login, .titulo-cards, .titulo-grid {
-        font-size: 1.2em;
+    /* Sidebar */
+    .menu_conteudo {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 }
+
+/* Estilos para tablets (médio) */
+@media (min-width: 769px) and (max-width: 1400px) {
+    .nav-bar {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .inform-section {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card-Historia {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .titulo-historia-conteudo {
+        width: 65%;
+
+    }
+
+    .div-video {
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linha-abaixo-conteudo {
+        width: 90%;
+
+    }
+
+    .linha {
+        width: 65%;
+    }
+
+    .navegacao-paginas ul {
+        gap: 20px;
+    }
+
+    .container-80 {
+        width: 70%;
+    }
+
+    .cards-historia {
+        width: 48%;
+    }
+
+    .form-login {
+        width: 70%;
+        padding: 20px;
+    }
+}
+
