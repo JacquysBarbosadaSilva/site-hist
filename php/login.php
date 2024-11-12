@@ -23,17 +23,22 @@
                 $_SESSION['id_usuario'] = $user['id'];  
                 $_SESSION['tipo'] = $user['type'];
 
-                if ($user['type'] == 'Professor') {
-                    header('Location: home_page_logado.php'); 
-                } else {
-                    header('Location: home_page_logado.php');
-                }
+                header('Location: home_page_logado.php'); 
                 exit;
             } else {
                 echo "Senha incorreta!";
             }
         } else {
-            echo "<script>alert('Usuário não encontrado! Volte para a página de cadastro.')</script>";
+            echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+            echo "<script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        Swal.fire({
+                            title: 'Usuário não encontrado!',
+                            icon: 'success',
+                            confirmButtonText: 'Tente fazer um cadastro'
+                        });
+                    });
+                </script>";
         }
 
         $stmt->close();
@@ -55,11 +60,11 @@
         
         <div class="form-login">
         
-        <div class="lugar-logo">
-                    <a href="cadastrar.php"><button class="button-voltar"><img class="imagem-voltar" src="../img/de-volta.png" alt=""></button></a>
-                    <img class="logo-cadastrar" src="../img/img-logo.png" alt="">
-                    <button class="button-voltar1"></button>
-                </div>
+            <div class="lugar-logo">
+                
+                <img class="logo-cadastrar" src="../img/img-logo.png" alt="">
+
+            </div>
             <form class="" action="" method="post">
                 
                 
@@ -77,6 +82,7 @@
                 
                 <div class="alinhamento-button">
                     <button class="button-entrar" type="submit">Login</button>
+                    <a id="link-cadastrar" href="cadastrar.php">Não possuí cadastro? Clique aqui e faça seu cadastro</a>
                 </div>
                 
                 

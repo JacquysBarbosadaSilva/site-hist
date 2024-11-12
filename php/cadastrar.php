@@ -18,6 +18,16 @@
         if ($result_check->num_rows > 0) {
 
             header('Location: cadastrar.php?error=usuario_existente');
+            echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+            echo "<script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        Swal.fire({
+                            title: 'O usuário já existe!,
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        });
+                    });
+                </script>";
             exit(); // Para evitar execução a seguir caso o usuário já exista
 
         } else {
@@ -38,7 +48,7 @@
                     });
                 </script>";
 
-                header('Location: login.php');
+                header('Location: home_page_logado.php');
             }
         }
 
@@ -63,10 +73,9 @@
     </head>
     <body class="body-cadastrar-login">
         <div class="form-login">
-            <a href="../index.php"><button class="button-voltar"><img class="imagem-voltar" src="../img/de-volta.png" alt=""></button></a>
             <form class="'" action="" method="post">
                 <div class="lugar-logo">
-                    <img class="logo-cadastrar" src="../img/img-logo.png" alt="">
+                    <a href="../index.php"><img class="logo-cadastrar" src="../img/img-logo.png" alt=""></a>
                 </div>
                 
                 <h1 class="titulo-login">Cadastrar</h1>
@@ -86,7 +95,7 @@
                 </div>
             </form>
             <div id="div-redirecionamento">
-                <a id="redirecionamento" href="home_page_logado.php">Já tem cadastro? Faça seu login</a>
+                <a id="redirecionamento" href="login.php">Já tem cadastro? Faça seu login</a>
             </div>
         </div>
     </body>

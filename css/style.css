@@ -106,6 +106,13 @@ body {
     padding: 10px 20px;
 }
 
+#link-cadastrar{
+    color: #1C826A;
+    text-decoration: dashed;
+    font-size: medium;
+    margin: auto;
+}
+
 .button-login:hover {
     color: white;
     font-weight: bolder;
@@ -177,12 +184,11 @@ body {
 
 .cards-historia {
     cursor: pointer;
-    border: 1px solid #ccc;
     padding: 20px; 
     border-radius: 8px; 
     background-color: #f9f9f9; 
     text-align: center; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); 
     transition: transform 0.2s; 
 }
 
@@ -279,7 +285,9 @@ h5{
 }
 
 .identificador-campo{
+    width: 60px;
     align-items: center;
+    justify-content: center;
     display: flex;
 }
 
@@ -293,7 +301,8 @@ h5{
 
 .alinhamento-button {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 15px;
     margin-top: 15px;
     justify-content: center;
 }
@@ -402,13 +411,11 @@ h5{
 }
 
 .button-login-logado{
-    padding: 10px 10px;
-    border-radius: 10px;
     background-color: transparent;
     color: white;
     width: 200px;
-    margin-right: 20px;
     border: none;
+    margin: auto;
     text-align: center;
     font-size: 20px;
 }
@@ -426,8 +433,8 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border: 1px solid #1C826A;
+    width: 90%;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -472,17 +479,29 @@ h5{
 
 .fundo-form {
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
+    justify-content: center;
     margin-top: 100px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 40%;
 }
 
 .imagem-icone{
     width: 100px;
-    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.imagem-icone:hover{
+    background-color: #333;
+    border-radius: 500px;
+    cursor: pointer;
+    background-image: url(../img/lapis.png);
+    opacity: 0.7;
 }
 
 .alinhamento-form{
@@ -496,10 +515,11 @@ h5{
     width: 80%;
 }
 
-.button-alterar{
+.button-alterar-deletar{
+    padding: 10px 20px; /* Ajuste conforme necessário */
+    width: auto;
     display: flex;
     justify-content: center;
-    width: 40%;
     justify-content: center;
     background-color: #1C826A;
     border: none;
@@ -514,14 +534,14 @@ h5{
 }
 
 .button-logout{
+    padding: 10px 20px; /* Ajuste conforme necessário */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
     display: flex;
     justify-content: center;
-    width: 40%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     background-color: red;
     border: none;
-    text-decoration: none;
     font-size: larger;
     border-radius: 5px;
     color: white;
@@ -845,8 +865,96 @@ iframe{
     
 }
 
+/* Footer */
+
+footer{
+    background-color: #1C826A;
+}
+
+.linha-vertical{
+    height: 250px;
+    border-right: 1px white solid;
+}
+
+.footer {
+    background-color:  #1C826A;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    margin-right: 100px;
+    margin-left: 100px;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-contact h5 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: white;
+}
+
+#decoracao-link{
+    font-size: medium;
+    color: white;
+    text-decoration: none !important;
+}
+
+.linkedin-decoracao{
+    font-size: medium;
+    text-justify: justify;
+    color: white;
+    text-decoration: none;
+}
+
+.linkedin-decoracao:hover{
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociais-icones{
+    width: 50px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+}
+
+.alinhamento-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-copyright p {
+    display: flex;
+    justify-content: center;
 
 
+}
 
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
@@ -926,6 +1034,7 @@ iframe{
         margin-left: 0;
         width: 100%;
         padding: 20px;
+        background-color: white;
     }
 
     /* Sidebar */

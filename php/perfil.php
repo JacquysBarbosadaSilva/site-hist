@@ -35,9 +35,6 @@
         $stmt->close();
     }
 
-    $conexao->close();
-
-
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +59,7 @@
                         </a>
                     </div>
                     <ul>
-                        <li><a href="home_page_logado.php">Home</a></li>
+                        <li><a href="home_page_logado.php">Página Inicial</a></li>
                         <li><a href="glossario.php">Glossário</a></li>
                     </ul> 
                 </div>
@@ -71,12 +68,12 @@
                         if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
                             echo "
                             <div class='login-finalizado-navbar'>
-                                <p class='button-login-logado'>Olá, estudante " . $_SESSION['usuario'] . "!</p>
+                                <p class='button-login-logado'>Olá, " . $_SESSION['usuario'] . "!</p>
                             </div>";
                         } else {
                             echo "
                             <div class='login-finalizado-navbar'>
-                                <p class='button-login-logado'>Olá, professor " . $_SESSION['usuario'] . "!</p>
+                                <p class='button-login-logado'>Olá, " . $_SESSION['usuario'] . "!</p>
                             </div>";
                         }
                     ?>
@@ -90,28 +87,13 @@
                 <img class="logo-cadastrar" src="../img/img-logo.png" alt="">
                 <h1 class="titulo-login">Perfil</h1>
                 
-                <div class="alinhamento-form">
-                    <div class="alinhamento-imagem-icone"><img class="imagem-icone" src="../img/icone-perfil.png" alt=""></div>
-
-                    <?php
-                        if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
-                            echo "
-                            <div class='perfil-dialogo-alinhamento'>
-                                <h2 class='perfil-dialogo'>Bem-Vindo, estudante " . $_SESSION['usuario'] . "!</h2>
-                            </div>";
-                        } else {
-                            echo "
-                            <div class='login-finalizado-navbar'>
-                                <h2>Bem-Vindo, professor " . $_SESSION['usuario'] . "!</h2>
-                            </div>";
-                        }
-                    ?>
 
                     
-
-                    
-                </div>
                 <div class="centralizacao-formulario">
+                    <div>
+                        <img id="iconePerfil" class="imagem-icone" src="<?php echo isset($_SESSION['imagem_perfil']) ? $_SESSION['imagem_perfil'] : '../img/icone-perfil.png'; ?>" alt="Ícone de Perfil">
+                        <input type="file" id="uploadImagem" accept="image/*" style="display: none;">
+                    </div>
                     <form class="tamanho-formulario" action="" method="post">
                         <div class="campos-texto">
                             <label class="identificador-campo"  for="username">Usuário:</label>
@@ -123,23 +105,28 @@
                             <input class="campos-info" type="password" id="password" name="password" required>
                         </div>
 
-                        <div class="apenas-button-form-alterar">
-                            <button class="button-alterar" type="submit">Alterar</button>
+
+                        <div class="apenas-button">
+                            <form action="" method="post">
+                                <button class="button-alterar-deletar" value="<?php echo $usuario['id']; ?>" type="submit">Alterar</button>
+                            </form>
+
+                            <form action="deletar.php" method="POST">
+                                <button class="button-alterar-deletar" type="submit" name="deletar">Deletar</button>
+                            </form>
+
+                            <a class="button-logout" href="logout.php">Logout</a>
                         </div>
+
                     </form>
                 </div>
 
-                <div class="apenas-button">
-                    <form class="tamanh-total" action="deletar.php" method="post">
-                        <button class="button-alterar tamanho" value="<?php echo $usuario['id']; ?>" type="submit">Deletar</button>
-                    </form>
-                    
-                    <a class="button-logout" href="logout.php">Logout</a>
-                </div>
+                
                 <div>
                 </div>
                 
             </div>
         </div>
+        <script src="../js/script.js"></script>
     </body>
 </html>
