@@ -71,13 +71,14 @@
                 </ul> 
             </div>
             <div class="alinhamento-login-finalizado alinhamento-login-finalizado-glossario">
-                <?php
+            <?php
                 if (isset($_SESSION['usuario'])) {
                     echo "<div class='login-finalizado-navbar'>
-                            <p class='button-login-logado'>Olá, " . ($_SESSION['tipo'] === 'Aluno' ? 'estudante' : 'professor') . " " . $_SESSION['usuario'] . "!</p>
-                          </div>";
+                        <p class='button-login-logado'> Olá, " . strtoupper($_SESSION['usuario']) . "!</p>
+                    </div>";
                 }
-                ?>
+            ?>
+
                 <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
             </div>
         </div>

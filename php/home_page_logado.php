@@ -3,14 +3,6 @@
     session_start();
     $idUsuario = $_SESSION['id_usuario'];
 
-    // Busca o caminho da imagem do banco de dados
-    $sql = "SELECT img_usuario FROM usuarios WHERE id = ?";
-    $stmt = $conexao->prepare($sql);
-    $stmt->bind_param("i", $idUsuario);
-    $stmt->execute();
-    $stmt->bind_result($caminhoImagem);
-    $stmt->fetch();
-    $stmt->close();
     
     // Define uma imagem padrão se o usuário não tiver uma imagem
     if (empty($caminhoImagem)) {
@@ -43,24 +35,23 @@
                     
                     <div class="navegacao-paginas">
                         <div class="logo">
-                            <a href="./php/login.php">
+                            <a href="home_page_logado.php">
                                 <img class="logo-nav-bar" src="../img/img-logo.png" alt="Logo">
                             </a>
                         </div>
                         <ul>
-                            <li><a href="#">Página Inicial</a></li>
+                            <li><a href="home_page_logado.php">Página Inicial</a></li>
                             <li><a href="glossario.php">Glossário</a></li>
                         </ul> 
                     </div>
                     <div class="alinhamento-login-finalizado">
-                        <?php
-                            if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
-                                echo "
-                                <div class='login-finalizado-navbar'>
-                                    <p class='button-login-logado'>Bem vindo, " . $_SESSION['usuario'] . "!</p>
-                                </div>";
-                            }
-                        ?>
+                    <?php
+                        if (isset($_SESSION['usuario'])) {
+                            echo "<div class='login-finalizado-navbar'>
+                                <p class='button-login-logado'> Olá, " . strtoupper($_SESSION['usuario']) . "!</p>
+                            </div>";
+                        }
+                    ?>
                         <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
                     </div>
                 </div>
@@ -86,7 +77,7 @@
                 <div class="carousel-item" >
                     <img id="tamanho_da_imagem" class="d-block w-100" src="../img/historia_antiga.jpg" alt="Segundo Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>História Antga</h5>
+                        <h5>História Antiga</h5>
                     </div>
                 </div>
 
@@ -107,7 +98,7 @@
                 <div class="carousel-item" >
                     <img id="tamanho_da_imagem" class="d-block w-100" src="../img/idade_contemporanea.jpg" alt="Quarto Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Idade Contemporanea</h5>
+                        <h5>Idade Contemporânea</h5>
                     </div>
                 </div>
             </div>

@@ -18,80 +18,80 @@
                 
                 <div class="navegacao-paginas">
                     <div class="logo">
-                        <a href="./php/login.php">
+                        <a href="index.php">
                             <img class="logo-nav-bar" src="./img/img-logo.png" alt="Logo">
                         </a>
                     </div>
                     <ul>
-                        <li><a href="#">Página Inicial</a></li>
+                        <li><a href="index.php">Página Inicial</a></li>
                         <li><a href="./php/login.php">Glossário</a></li>
                     </ul> 
                 </div>
                 <div class="cadastro-login">
                     <ul id="botoes-caddastrar-login">
-                        <li><a href="./php/cadastrar.php" class="button-cadastrar">Cadastrar</a></li>
-                        <li><a href="./php/login.php" class="button-login">Login</a></li>
+                        <li><a href="./php/cadastrar.php" class="button-cadastrar">Criar uma conta</a></li>
+                        <li><a href="./php/login.php" class="button-login">Fazer login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <div class="alinhamento-carrossel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-        <div class="carousel-item active" style="position: relative;">
-            <img id="tamanho_da_imagem" class="d-block w-100" src="./img/archaeological-cave-paintings.jpg" alt="Primeiro Slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>História Primitiva</h5>
-            </div>
-        </div>
-
-            <div class="carousel-item" style="position: relative;">
-                <img id="tamanho_da_imagem" class="d-block w-100" src="./img/historia_antiga.jpg" alt="Segundo Slide">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+            <div class="carousel-item active" >
+                <img id="tamanho_da_imagem" class="d-block w-100" src="./img/archaeological-cave-paintings.jpg" alt="Primeiro Slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>História Antga</h5>
+                    <h5>História Primitiva</h5>
                 </div>
             </div>
 
-            <div class="carousel-item" style="position: relative;">
-                <img id="tamanho_da_imagem" class="d-block w-100" src="./img/idade_media.jpg" alt="Terceiro Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Idade Média</h5>
+                <div class="carousel-item" >
+                    <img id="tamanho_da_imagem" class="d-block w-100" src="./img/historia_antiga.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>História Antiga</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" >
+                    <img id="tamanho_da_imagem" class="d-block w-100" src="./img/idade_media.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Idade Média</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" >
+                    <img id="tamanho_da_imagem" class="d-block w-100" src="./img/idade_moderna.jpg" alt="Quarto Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Idade Moderna</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" >
+                    <img id="tamanho_da_imagem" class="d-block w-100" src="./img/idade_contemporanea.jpg" alt="Quarto Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Idade Contemporânea</h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="carousel-item" style="position: relative;">
-                <img id="tamanho_da_imagem" class="d-block w-100" src="./img/idade_moderna.jpg" alt="Quarto Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Idade Moderna</h5>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
                 </div>
-            </div>
-
-            <div class="carousel-item" style="position: relative;">
-                <img id="tamanho_da_imagem" class="d-block w-100" src="./img/idade_contemporanea.jpg" alt="Quarto Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Idade Contemporanea</h5>
-                </div>
-            </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
-            </div>
-        </div>
+            </div> 
 
     <div class="container-grid text-center">
         <h1 class="titulo-grid">Qual conteúdo deseja explorar?</h1>
@@ -139,7 +139,7 @@
             <div class="col-md-3">
                 <a class="titulo-cards" href="php/cadastrar.php">
                     <div class="cards-historia">
-                        <h5>Idade Contemporanea</h5>
+                        <h5>Idade Contemporânea</h5>
                         <img class="imagens-dos-cards" src="img/img-card-idade-media.jpg" alt="">
                     </div>
                 </a>
