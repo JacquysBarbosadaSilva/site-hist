@@ -14,6 +14,13 @@
     <body>
         <div class="container-conteudo">
             
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="hamburguer-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
             <div class="menu_conteudo">
                 <h2 id="sidebar-conteudo">MENU</h2>
                 <div class="redirecionamento-sidebar">
@@ -26,7 +33,7 @@
                         <li><a href="historia_primitiva.php">Históra Primitiva</a></li>
                         <li><a href="historia_antiga.php">História Antiga</a></li>
                         <li><a href="idade_media.php">Idade Média</a></li>
-                        <li><a class="periodo-selecionado" href="#">Idade Moderna</a></li>
+                        <li><a class="periodo-selecionado" href="idade_moderna.php">Idade Moderna</a></li>
                         <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
                     </ul>
                 </div>

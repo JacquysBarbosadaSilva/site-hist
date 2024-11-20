@@ -39,3 +39,30 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Seleciona os elementos necessários
+const menuToggle = document.getElementById('menu-toggle');
+const menuConteudo = document.querySelector('.menu_conteudo');
+
+// Adiciona um evento para alternar o estado do menu
+menuToggle.addEventListener('change', () => {
+    if (menuToggle.checked) {
+        // Abre o menu
+        menuConteudo.style.left = '0';
+    } else {
+        // Fecha o menu
+        menuConteudo.style.left = '-250px';
+    }
+});
+
+// Define o estilo inicial do menu
+menuConteudo.style.position = 'fixed';
+menuConteudo.style.top = '0';
+menuConteudo.style.left = '-250px';
+menuConteudo.style.width = '250px';
+menuConteudo.style.height = '100%';
+menuConteudo.style.background = '#f8f8f8';
+menuConteudo.style.boxShadow = '2px 0 5px rgba(0, 0, 0, 0.3)';
+menuConteudo.style.transition = 'left 0.3s ease';
+menuConteudo.style.zIndex = '1000';
+

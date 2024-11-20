@@ -77,7 +77,6 @@
                             </div>";
                         }
                     ?>
-                    <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
                 </div>
             </div>
         </nav>
@@ -90,10 +89,7 @@
 
                     
                 <div class="centralizacao-formulario">
-                    <div>
-                        <img id="iconePerfil" class="imagem-icone" src="<?php echo isset($_SESSION['imagem_perfil']) ? $_SESSION['imagem_perfil'] : '../img/icone-perfil.png'; ?>" alt="Ícone de Perfil">
-                        <input type="file" id="uploadImagem" accept="image/*" style="display: none;">
-                    </div>
+                    
                     <form class="tamanho-formulario" action="" method="post">
                         <div class="campos-texto">
                             <label class="identificador-campo"  for="username">Usuário:</label>

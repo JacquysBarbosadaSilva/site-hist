@@ -6,7 +6,6 @@
 
 body {
 
-    background-color: rgba(110, 110, 110, 0.4) !important;
     width: 100%;
     overflow: auto; 
     position: relative; 
@@ -175,6 +174,9 @@ body {
 .container-grid {
     margin: 20px;
     background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .container-80 {
@@ -197,7 +199,6 @@ body {
 }
 
 .titulo-grid{
-    margin-top: 4%;
     padding: 20px;
 }
 
@@ -227,6 +228,7 @@ h5{
 
 .campos-texto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 5%;
     margin-top: 20px;
@@ -269,7 +271,7 @@ h5{
 }
 
 .campos-info{
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -286,8 +288,9 @@ h5{
 
 .identificador-campo{
     width: 60px;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
     display: flex;
 }
 
@@ -889,6 +892,8 @@ footer{
     display: flex;
     margin-right: 100px;
     margin-left: 100px;
+    justify-content: center;
+    width: 300px;
     max-width: 300px;
     flex-direction: column;
     align-items: center;
@@ -953,7 +958,13 @@ footer{
     display: flex;
     justify-content: center;
 
+}
 
+p.footer-copyright {
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin-bottom: -1rem;
 }
 
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
@@ -965,12 +976,21 @@ footer{
     .nav-bar {
         flex-direction: column;
         padding: 20px;
+        width: 100%;
+    }
+
+    .navegacao-paginas{
+        width: 100%;
     }
 
     .navegacao-paginas,
     #botoes-caddastrar-login {
         flex-direction: column;
         align-items: center;
+    }
+
+    .alinhamento-login-finalizado{
+        margin-top: 15px;
     }
 
     .linha{
@@ -980,6 +1000,19 @@ footer{
     .navegacao-paginas ul {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navegacao-paginas ul li {
+        justify-content: center;
+        display: flex;
+        border-bottom: 1px white solid;
+        padding: 5px;
+    }
+
+    .navegacao-paginas ul li:hover{
+        color: #f0a500;
     }
 
     .inform-section {
@@ -988,12 +1021,13 @@ footer{
     }
 
     .card-Historia {
-        width: 240px;
+        width: 330px;
+        margin-top: 20px;
     }
 
     .div-video {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
 
     .logo img {
@@ -1042,11 +1076,107 @@ footer{
         width: 50%;
         height: auto;
         position: relative;
+        color: white !important;
     }
 
     .carousel-inner {
         margin-top: 250px;
     }
+
+    .fundo-form{
+        width: 80%;
+        margin-top: 250px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        margin: auto;
+        margin-left: 0px !important;
+    }
+
+    .linha-vertical{
+        margin-left: 10px;
+    }
+
+    #sidebar-conteudo {
+        font-family: 'Jockey one';
+        letter-spacing: 10px;
+        font-size: 50px;
+        color: #1C826A;
+        background-color: white;
+    }
+
+    .menu_conteudo {
+        position: fixed;
+        top: 0;
+        left: -400px; /* Escondido fora da tela */
+        width: 300px;
+        height: 100%;
+        background-color: #1C826A;
+        color: #fff;
+        overflow-y: auto;
+        transition: left 0.3s ease; /* Transição suave */
+        z-index: 1000;
+    }
+    
+    /* Estilo do título */
+    .menu_conteudo h2 {
+        padding: 20px;
+        margin: 0;
+        background: #333;
+        color: white;
+        text-align: center;
+    }
+    
+    /* Estilo das listas */
+    .menu_conteudo ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    .menu_conteudo ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        transition: background 0.3s;
+    }
+    
+    .menu_conteudo ul li a:hover {
+        background: #eee;
+    }
+    
+    /* Ícone do menu hambúrguer */
+    .hamburguer-icon {
+        border-radius: 40px;
+        padding: 5px;
+        margin-top: 850px;
+        margin-left: 330px;
+        position: fixed;
+        background-color: #1C826A;
+        padding: 10px;
+        /* top: 15px; */
+        left: 15px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    
+    .hamburguer-icon span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+        background: white;
+        transition: 0.3s;
+    }
+
+    #menu-toggle:checked + .hamburguer-icon + .menu_conteudo {
+        left: 0;
+    }
+    
 }
 
 

@@ -3,19 +3,7 @@
     session_start();
     $idUsuario = $_SESSION['id_usuario'];
 
-    // Busca o caminho da imagem do banco de dados
-    $sql = "SELECT img_usuario FROM usuarios WHERE id = ?";
-    $stmt = $conexao->prepare($sql);
-    $stmt->bind_param("i", $idUsuario);
-    $stmt->execute();
-    $stmt->bind_result($caminhoImagem);
-    $stmt->fetch();
-    $stmt->close();
-    
-    // Define uma imagem padrão se o usuário não tiver uma imagem
-    if (empty($caminhoImagem)) {
-        $caminhoImagem = "../img/icone-perfil.png";
-    }
+
 
 
     // Verifica se o usuário está logado
@@ -52,17 +40,18 @@
                             <li><a href="glossario.php">Glossário</a></li>
                         </ul> 
                     </div>
-                    <div class="alinhamento-login-finalizado">
-                        <?php
-                            if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
-                                echo "
-                                <div class='login-finalizado-navbar'>
-                                    <p class='button-login-logado'>Bem vindo, " . $_SESSION['usuario'] . "!</p>
-                                </div>";
-                            }
-                        ?>
-                        <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
-                    </div>
+                    <a href="perfil.php">
+                        <div class="alinhamento-login-finalizado">
+                            <?php
+                                if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
+                                    echo "
+                                    <div class='login-finalizado-navbar'>
+                                        <p class='button-login-logado'>Bem vindo, " . $_SESSION['usuario'] . "!</p>
+                                    </div>";
+                                }
+                            ?>
+                        </div>
+                    </a>
                 </div>
             </nav>
 
