@@ -3,15 +3,11 @@
     session_start();
     $idUsuario = $_SESSION['id_usuario'];
 
-<<<<<<< HEAD
-
-=======
     
     // Define uma imagem padrão se o usuário não tiver uma imagem
     if (empty($caminhoImagem)) {
         $caminhoImagem = "../img/icone-perfil.png";
     }
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
 
 
     // Verifica se o usuário está logado
@@ -48,20 +44,6 @@
                             <li><a href="glossario.php">Glossário</a></li>
                         </ul> 
                     </div>
-<<<<<<< HEAD
-                    <a href="perfil.php">
-                        <div class="alinhamento-login-finalizado">
-                            <?php
-                                if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
-                                    echo "
-                                    <div class='login-finalizado-navbar'>
-                                        <p class='button-login-logado'>Olá, " . $_SESSION['usuario'] . "!</p>
-                                    </div>";
-                                }
-                            ?>
-                        </div>
-                    </a>
-=======
                     <div class="alinhamento-login-finalizado">
                     <?php
                         if (isset($_SESSION['usuario'])) {
@@ -72,7 +54,6 @@
                     ?>
                         <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
                     </div>
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
                 </div>
             </nav>
 
