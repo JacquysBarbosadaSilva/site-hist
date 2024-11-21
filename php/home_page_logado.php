@@ -27,7 +27,7 @@
     </head>
     <body>
             <nav>
-                <div class="nav-bar">
+                <div class="nav-bar responsividade">
                     
                     <div class="navegacao-paginas">
                         <div class="logo">
@@ -46,7 +46,7 @@
                                 if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
                                     echo "
                                     <div class='login-finalizado-navbar'>
-                                        <p class='button-login-logado'>Bem vindo, " . $_SESSION['usuario'] . "!</p>
+                                        <p class='button-login-logado'>Olá, " . $_SESSION['usuario'] . "!</p>
                                     </div>";
                                 }
                             ?>

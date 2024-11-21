@@ -14,7 +14,7 @@
     </head>
     <body>
         <nav>
-            <div class="nav-bar">
+            <div class="nav-bar responsividade">
                 
                 <div class="navegacao-paginas">
                     <div class="logo">
