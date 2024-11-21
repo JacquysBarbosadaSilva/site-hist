@@ -23,10 +23,21 @@
                 $_SESSION['id_usuario'] = $user['id'];  
                 $_SESSION['tipo'] = $user['type'];
 
-                header('Location: home_page_logado.php'); 
+                header('Location: home_page_logado.php');
                 exit;
             } else {
-                echo "Senha incorreta!";
+                echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+                echo "<script>
+                        document.addEventListener('DOMContentLoaded', function(){
+                            Swal.fire({
+                                title: 'Senha incorreta!',
+                                icon: 'warning',
+                                confirmButtonText: 'OK'
+                            }).then(function() {
+                                window.location.href = 'login.php';  // Redireciona para a página de login após a exclusão
+                            });
+                        });
+                    </script>";
             }
         } else {
             echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";

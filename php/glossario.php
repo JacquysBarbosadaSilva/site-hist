@@ -17,7 +17,6 @@
         $termo = $_POST['termo'];
         $definicao = $_POST['definicao'];
         $fonte = $_POST['fonte'];
-        $imagem = $_POST['imagem']; // URL da imagem
 
         $sql = "INSERT INTO conceitos (termo, definicao, fonte, imagem) VALUES (?, ?, ?, ?)";
         $stmt = $conexao->prepare($sql);
@@ -261,7 +260,7 @@
 
                 </div>
 
-                <div class="colunas-glossari-2">
+                <div class="colunas-glossario-2">
 
                     <div>
                         <div class="divisão">

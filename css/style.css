@@ -634,6 +634,15 @@ h5{
 #p-infor{
     margin-top: 20px;
     margin-left: 10px;
+    text-align: justify;
+}
+
+.colunas-glossario-1 {
+    width: 90%;
+}
+
+.colunas-glossario-2 {
+    width: 90%;
 }
 
 .divisão{
