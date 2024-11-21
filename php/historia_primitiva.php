@@ -31,16 +31,16 @@
                 <h2 id="sidebar-conteudo">MENU</h2>
                 <div class="redirecionamento-sidebar">
                     <ul class="redirecionamento-pagina">
-                        <li><a href="home_page_logado.php">Página Inicial</a></li>
-                        <li><a href="glossario.php">Glossário</a></li>
+                        <li><a class="redirecionamento-glossario" href="home_page_logado.php">Página Inicial</a></li>
+                        <li><a class="redirecionamento-glossario" href="glossario.php">Glossário</a></li>
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
-                        <li><a class="periodo-selecionado" href="#">Históra Primitiva</a></li>
-                        <li><a href="historia_antiga.php">História Antiga</a></li>
-                        <li><a href="idade_media.php">Idade Média</a></li>
-                        <li><a href="idade_moderna.php">Idade Moderna</a></li>
-                        <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
+                        <li><a class="redirecionamento-glossario" class="periodo-selecionado" href="#">Históra Primitiva</a></li>
+                        <li><a class="redirecionamento-glossario" href="historia_antiga.php">História Antiga</a></li>
+                        <li><a class="redirecionamento-glossario" href="idade_media.php">Idade Média</a></li>
+                        <li><a class="redirecionamento-glossario" href="idade_moderna.php">Idade Moderna</a></li>
+                        <li><a class="redirecionamento-glossario" href="idade_contemporanea.php">Idade contemporânea</a></li>
                     </ul>
                 </div>
 

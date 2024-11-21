@@ -70,18 +70,17 @@
                     <li><a href="#">Glossário</a></li>
                 </ul> 
             </div>
-            <a href="perfil.php">
-                <div class="alinhamento-login-finalizado">
-                    <?php
-                        if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
-                            echo "
-                            <div class='login-finalizado-navbar'>
-                                <p class='button-login-logado'>Olá, " . $_SESSION['usuario'] . "!</p>
-                            </div>";
-                        }
-                    ?>
-                </div>
-            </a>
+            <div class="alinhamento-login-finalizado alinhamento-login-finalizado-glossario">
+            <?php
+                if (isset($_SESSION['usuario'])) {
+                    echo "<div class='login-finalizado-navbar'>
+                        <p class='button-login-logado'> Olá, " . strtoupper($_SESSION['usuario']) . "!</p>
+                    </div>";
+                }
+            ?>
+
+                <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
+            </div>
         </div>
     </nav>
     <div class="alinhamento-container">

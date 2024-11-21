@@ -3,7 +3,15 @@
     session_start();
     $idUsuario = $_SESSION['id_usuario'];
 
+<<<<<<< HEAD
 
+=======
+    
+    // Define uma imagem padrão se o usuário não tiver uma imagem
+    if (empty($caminhoImagem)) {
+        $caminhoImagem = "../img/icone-perfil.png";
+    }
+>>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
 
 
     // Verifica se o usuário está logado
@@ -31,15 +39,16 @@
                     
                     <div class="navegacao-paginas">
                         <div class="logo">
-                            <a href="./php/login.php">
+                            <a href="home_page_logado.php">
                                 <img class="logo-nav-bar" src="../img/img-logo.png" alt="Logo">
                             </a>
                         </div>
                         <ul>
-                            <li><a href="#">Página Inicial</a></li>
+                            <li><a href="home_page_logado.php">Página Inicial</a></li>
                             <li><a href="glossario.php">Glossário</a></li>
                         </ul> 
                     </div>
+<<<<<<< HEAD
                     <a href="perfil.php">
                         <div class="alinhamento-login-finalizado">
                             <?php
@@ -52,6 +61,18 @@
                             ?>
                         </div>
                     </a>
+=======
+                    <div class="alinhamento-login-finalizado">
+                    <?php
+                        if (isset($_SESSION['usuario'])) {
+                            echo "<div class='login-finalizado-navbar'>
+                                <p class='button-login-logado'> Olá, " . strtoupper($_SESSION['usuario']) . "!</p>
+                            </div>";
+                        }
+                    ?>
+                        <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
+                    </div>
+>>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
                 </div>
             </nav>
 
@@ -75,7 +96,7 @@
                 <div class="carousel-item" >
                     <img id="tamanho_da_imagem" class="d-block w-100" src="../img/historia_antiga.jpg" alt="Segundo Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>História Antga</h5>
+                        <h5>História Antiga</h5>
                     </div>
                 </div>
 
@@ -96,7 +117,7 @@
                 <div class="carousel-item" >
                     <img id="tamanho_da_imagem" class="d-block w-100" src="../img/idade_contemporanea.jpg" alt="Quarto Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Idade Contemporanea</h5>
+                        <h5>Idade Contemporânea</h5>
                     </div>
                 </div>
             </div>

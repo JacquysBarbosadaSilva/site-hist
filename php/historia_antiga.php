@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Fascinate+Inline&family=Jockey+One&display=swap" rel="stylesheet">
-        <title>História Primitiva - Históra e Tradição</title>
+        <title>História Antiga - Históra e Tradição</title>
         <link rel="stylesheet" href="../css/style.css">
 
     </head>
@@ -31,16 +31,24 @@
                 <h2 id="sidebar-conteudo">MENU</h2>
                 <div class="redirecionamento-sidebar">
                     <ul class="redirecionamento-pagina">
-                        <li><a href="home_page_logado.php">Página Inicial</a></li>
-                        <li><a href="glossario.php">Glossário</a></li>
+                        <li><a class="redirecionamento-glossario" href="home_page_logado.php">Página Inicial</a></li>
+                        <li><a class="redirecionamento-glossario" href="glossario.php">Glossário</a></li>
                     </ul>
                     <div class="linha-menu"></div>
                     <ul class="redirecionamento-pagina">
+<<<<<<< HEAD
                         <li><a href="historia_primitiva.php">Históra Primitiva</a></li>
                         <li><a class="periodo-selecionado" href="historia_antiga.php">História Antiga</a></li>
                         <li><a href="idade_media.php">Idade Média</a></li>
                         <li><a href="idade_moderna.php">Idade Moderna</a></li>
                         <li><a href="idade_contemporanea.php">Idade contemporânea</a></li>
+=======
+                        <li><a class="redirecionamento-glossario" href="historia_primitiva.php">Históra Primitiva</a></li>
+                        <li><a class="redirecionamento-glossario" class="periodo-selecionado" href="#">História Antiga</a></li>
+                        <li><a class="redirecionamento-glossario" href="idade_media.php">Idade Média</a></li>
+                        <li><a class="redirecionamento-glossario" href="idade_moderna.php">Idade Moderna</a></li>
+                        <li><a class="redirecionamento-glossario" href="idade_contemporanea.php">Idade contemporânea</a></li>
+>>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
                     </ul>
                 </div>
 

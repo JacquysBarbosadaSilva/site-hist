@@ -73,21 +73,23 @@
     </head>
     <body class="body-cadastrar-login">
         <div class="form-login">
+            <div class="lugar-logo">
+                <img class="logo-cadastrar" src="../img/img-logo.png" alt="">
+            </div>
+            
             <form class="'" action="" method="post">
-                <div class="lugar-logo">
-                    <a href="../index.php"><img class="logo-cadastrar" src="../img/img-logo.png" alt=""></a>
-                </div>
                 
-                <h1 class="titulo-login">Cadastrar</h1>
+                
+                <h1 class="titulo-login">Criar uma conta</h1>
 
                 <div class="campos-texto">
-                    <label class="identificador-campo"  for="username">Usuário:</label>
-                    <input class="campos-info" type="text" id="username" name="username" required>
+                    <label for="username">Usuário:</label>
+                    <input placeholder="Digite seu usuário" class="campos-info" type="text" id="username" name="username" required>
                 </div>
                 
                 <div class="campos-texto">
-                    <label class="identificador-campo" for="password">Senha:</label>
-                    <input class="campos-info" type="password" id="password" name="password" required>
+                    <label for="password">Senha:</label>
+                    <input placeholder="Digite sua senha" class="campos-info" type="password" id="password" name="password" required>
                 </div>
                 
                 <div class="alinhamento-button">
@@ -95,7 +97,7 @@
                 </div>
             </form>
             <div id="div-redirecionamento">
-                <a id="redirecionamento" href="login.php">Já tem cadastro? Faça seu login</a>
+                <a id="redirecionamento" href="login.php">Já tem cadastro? Entrar na sua conta</a>
             </div>
         </div>
     </body>

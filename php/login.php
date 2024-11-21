@@ -68,36 +68,33 @@
         <title>Login - Históra e Tradição</title>
     </head>
     <body class="body-cadastrar-login">
-        
         <div class="form-login">
-        
             <div class="lugar-logo">
-                
                 <img class="logo-cadastrar" src="../img/img-logo.png" alt="">
-
             </div>
-            <form class="" action="" method="post">
+            
+            <form class="'" action="" method="post">
                 
                 
-                <h1 class="titulo-login">Login</h1>
+                <h1 class="titulo-login">Entrar na sua conta</h1>
 
                 <div class="campos-texto">
-                    <label class="identificador-campo"  for="username">Usuário:</label>
-                    <input class="campos-info" type="text" id="username" name="username" required>
+                    <label for="username">Usuário:</label>
+                    <input placeholder="Digite seu usuário" class="campos-info" type="text" id="username" name="username" required>
                 </div>
                 
                 <div class="campos-texto">
-                    <label class="identificador-campo" for="password">Senha:</label>
-                    <input class="campos-info" type="password" id="password" name="password" required>
+                    <label for="password">Senha:</label>
+                    <input placeholder="Digite sua senha" class="campos-info" type="password" id="password" name="password" required>
                 </div>
                 
                 <div class="alinhamento-button">
-                    <button class="button-entrar" type="submit">Login</button>
-                    <a id="link-cadastrar" href="cadastrar.php">Não possuí cadastro? Clique aqui e faça seu cadastro</a>
+                    <button class="button-entrar" type="submit">Entrar</button>
                 </div>
-                
-                
             </form>
+            <div id="div-redirecionamento">
+                <a id="redirecionamento" href="cadastrar.php">Não tem uma conta? Fazer seu cadastro</a>
+            </div>
         </div>
     </body>
 </html>
