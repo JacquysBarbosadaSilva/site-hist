@@ -64,7 +64,6 @@
                     </ul> 
                 </div>
                 <div class="alinhamento-login-finalizado alinhamento-login-finalizado-glossario">
-<<<<<<< HEAD
                     <?php
                         if (isset($_SESSION['usuario']) && ($_SESSION['tipo'])) {
                             echo "
@@ -78,16 +77,6 @@
                             </div>";
                         }
                     ?>
-=======
-                <?php
-                    if (isset($_SESSION['usuario'])) {
-                        echo "<div class='login-finalizado-navbar'>
-                            <p class='button-login-logado'> Olá, " . strtoupper($_SESSION['usuario']) . "!</p>
-                        </div>";
-                    }
-                ?>
-                    <a href="perfil.php"><img class="perfil-icone" src="../img/icone-perfil.png" alt=""></a>
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
                 </div>
             </div>
         </nav>

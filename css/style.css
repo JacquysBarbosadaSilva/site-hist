@@ -4,7 +4,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
 }
 
-<<<<<<< HEAD
 body {
 
     width: 100%;
@@ -12,8 +11,6 @@ body {
     position: relative; 
 }
 
-=======
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
 /* Nav Bar */
 
 .nav-bar {
@@ -88,6 +85,15 @@ body {
 .cadastro-login ul {
     margin: 0;
     padding: 0;
+}
+
+.alinha-login-cadastro{
+    display: flex;
+    align-items: baseline;
+}
+
+.cadastro-login{
+    display: flex;
 }
 
 /* Estilo dos botões de cadastro e login */
@@ -194,12 +200,8 @@ body {
     margin: 20px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-<<<<<<< HEAD
     border-radius: 20px;
     padding: 20px;
-=======
-    border-radius: 30px;
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
 }
 
 .container-80 {
@@ -221,12 +223,7 @@ body {
     transform: scale(1.05);
 }
 
-<<<<<<< HEAD
 .titulo-grid{
-=======
-.titulo-grid {
-    margin-top: 4%;
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
     padding: 20px;
 }
 
@@ -257,12 +254,9 @@ h5 {
 }
 
 .campos-texto {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: center;
-=======
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
     gap: 5%;
     margin-top: 20px;
 }
@@ -317,11 +311,7 @@ h5 {
     background-color: white;
 }
 
-<<<<<<< HEAD
 .campos-info{
-=======
-.campos-info {
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -336,7 +326,6 @@ h5 {
     border: 1.8px solid black;
 }
 
-<<<<<<< HEAD
 .identificador-campo{
     width: 60px;
     width: 100%;
@@ -393,7 +382,7 @@ h5 {
     display: flex;
     border: 1px solid #1C826A;
     border-radius: 5px;
-    color: #1C826A;
+    color: white;
     background-color: transparent;
     font-size: larger;
     font-weight: bolder;
@@ -401,13 +390,11 @@ h5 {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-top: 20px;
     cursor: pointer;
 }
 
 .button-login:hover{
     background-color: #1C826A;
-    color: white;
     cursor: pointer;
 }
 
@@ -431,9 +418,6 @@ h5 {
 }
 
 .lugar-logo{
-=======
-.lugar-logo {
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
     display: flex;
     justify-content: space-around;
     gap: 150px;
@@ -661,7 +645,6 @@ h5 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
 .alinhamento-colunas-glossario{
     margin-top: 50px;
     display: grid;
@@ -707,10 +690,6 @@ h5 {
 }
 
 .titulo, .subtitulo {
-=======
-.titulo,
-.subtitulo {
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
     color: #333;
 }
 
@@ -1072,7 +1051,6 @@ footer {
 .footer-copyright p {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
 
 }
 
@@ -1085,8 +1063,6 @@ p.footer-copyright {
     justify-content: center;
     display: flex;
     margin-bottom: -1rem;
-=======
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
 }
 
 /* Responsividade para telas menores (tablets e dispositivos móveis) */
@@ -1117,15 +1093,16 @@ p.footer-copyright {
         align-items: center;
     }
 
-<<<<<<< HEAD
+    #botoes-caddastrar-login{
+        width: 100%;
+        flex-direction: row;
+    }
+
     .alinhamento-login-finalizado{
         margin-top: 15px;
     }
 
     .linha{
-=======
-    .linha {
->>>>>>> f28154769f01a6049ac4dfe86d4d627aaf610bb1
         width: 90%;
     }
 

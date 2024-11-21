@@ -29,8 +29,11 @@
                 </div>
                 <div class="cadastro-login">
                     <ul id="botoes-caddastrar-login">
-                        <li><a href="./php/cadastrar.php" class="button-cadastrar">Criar uma conta</a></li>
-                        <li><a href="./php/login.php" class="button-login">Fazer login</a></li>
+                        <div class="alinha-login-cadastro">
+                            <li><a href="./php/cadastrar.php" class="button-cadastrar">Criar uma conta</a></li>
+                            <li><a href="./php/login.php" class="button-login">Fazer login</a></li>
+                        </div>
+                        
                     </ul>
                 </div>
             </div>
@@ -146,6 +149,41 @@
             </div>
         </div>
     </div>
+    <footer>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="img/img-logo.png" alt="Logo História e Tradição">
+                    </div>
+            
+                    <div class="footer-contact">
+                        <h5>Contato</h5>
+                        <p >Email: <a id="decoracao-link" href="mailto:victorkoba08@gmail.com">historiaetradicao@gmail.com</a></p>
+                        <p>Telefone: (12) 99039-99039</p>
+                    </div>
+                </div>
+
+                <div class="linha-vertical"></div>
+
+                <div class="footer-container">
+                    <div class="footer-social-media">
+                        <h5>Contatos</h5>
+                        
+                        <div class="alinhamento-footer">
+
+                            <a class="linkedin-decoracao" href="https://www.linkedin.com/in/jacquys-barbosa-da-silva-8498522b7/">Jacquys</a>
+                            <a class="linkedin-decoracao" href="https://www.linkedin.com/in/miguel-sales-618486312/">Miguel Sales</a>
+                            <a class="linkedin-decoracao" href="https://www.linkedin.com/in/nicole-cafalloni-92a33b248/">Nicole</a>
+                            <a class="linkedin-decoracao" href="https://www.linkedin.com/in/victor-koba-8a2960206/">Victor</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+            <p class="footer-copyright">&copy; 2024 História e Tradição - Todos os Direitos Reservados</p>
+        </footer>
 
         
 
